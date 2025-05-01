@@ -1,0 +1,179 @@
+.strain-list-container {
+  margin: 20px auto;
+  max-width: 1200px; /* Match the width of the FilterBar */
+  overflow-x: auto;
+}
+
+.strain-list-container.dark-mode {
+  background-color: #333; /* Dark background for the container */
+  color: #fff; /* Light text for dark mode */
+}
+
+.strain-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.strain-table th,
+.strain-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.strain-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.strain-table.dark-mode th {
+  background-color: #444; /* Darker header background for dark mode */
+  color: #fff; /* Light text for headers in dark mode */
+}
+
+.strain-table tr {
+  background-color: #fff; /* Default row background */
+}
+
+.strain-table.dark-mode tr {
+  background-color: #444; /* Default row background for dark mode */
+}
+
+.strain-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.strain-table.dark-mode tr:nth-child(even) {
+  background-color: #555; /* Darker row background for even rows in dark mode */
+}
+
+.strain-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.strain-table.dark-mode tr:nth-child(odd) {
+  background-color: #444; /* Darker row background for odd rows in dark mode */
+}
+
+.strain-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.strain-table.dark-mode tr:hover {
+  background-color: #666; /* Highlighted row background for dark mode */
+}
+
+.strain-table td div {
+  margin-bottom: 4px;
+}
+
+.strain-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.strain-table td:nth-child(2) { /* Style the Score column */
+  font-weight: bold;
+  color: white;
+}
+
+.strain-table.dark-mode td:nth-child(2) {
+  background-color: #222; /* Darker background for the score column in dark mode */
+  color: #fff; /* Light text for the score column */
+}
+
+.sort-controls {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.sort-controls button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sort-controls button:hover {
+  background-color: #0056b3;
+}
+
+.sort-controls.dark-mode button {
+  background-color: #0056b3; /* Darker button background for dark mode */
+}
+
+.sort-controls.dark-mode button:hover {
+  background-color: #003f8a; /* Even darker hover state for dark mode */
+}
+
+.strain-header {
+  text-align: left; /* Align the header with the table */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add spacing between the header and the table */
+}
+
+.strain-header.dark-mode {
+  color: #fff; /* Light text for the header in dark mode */
+}
+
+.controls-and-table {
+  width: 100%;
+  max-width: 1200px; /* Match the width of the FilterBar */
+  margin: 0 auto; /* Center the table and controls */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Close Button */
+.close-modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Strain Name Button */
+.strain-name-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.strain-name-button:hover {
+  color: #0056b3;
+}
